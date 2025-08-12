@@ -1,0 +1,287 @@
+ body {
+    height: 100%;
+    background-color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    line-height: 1.5; /* Improve spacing */
+}
+
+.login-container{
+    display: flex;
+    height: 100vh;
+    position: relative;
+    
+    
+}
+
+.left-section{
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    background-image: url(./elite-prop-hmlP-v0vJ5o-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+.background-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    font-family:'Times New Roman', Times, serif; 
+}
+
+.brand-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0b0b0b;
+
+}
+.brand-logo img{
+    border-radius: 100%;
+    height: 7%;
+    width: 5%;
+}
+
+.tag-line{
+    position: relative;
+    top: 300px;
+    margin-top: 20px;
+    margin-left: 70px;
+   
+}
+
+.tag-line h2 {
+    font-size:1.8rem;
+    margin-top: 5px;
+}
+
+.tag-line p {
+    font-size: 1rem;
+    margin-top: 0px;
+    padding-top: 0;
+}
+
+.tag-line p:nth-of-type(1){
+  position: absolute;
+  bottom: -25px;
+}
+.tag-line p:nth-of-type(2){
+  position: absolute;
+  bottom: -40px;
+}
+
+.carousel-indicators {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+
+.carousel-indicators span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #bbb;
+  border-radius: 50%;
+}
+
+.carousel-indicators span.active {
+  width: 30px;
+  height: 6px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.right-section{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: 30px;
+}
+.content-wrap{
+    position: absolute;
+    left: 120px;
+
+}
+
+.sign-in{
+    position: absolute;
+    top: -65px;
+    right:120px;
+    padding: 8px 20px;
+    border: none;
+    border-radius:  20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.right-section h2:first-of-type{
+    font-size: 1.5rem;
+    margin-top: 5px;margin-bottom: 0px;
+    
+}
+
+.right-section p:first-of-type{
+    font-size: 0.7rem;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin: 15px 0 4px;
+    font-size: 0.85em;
+}
+
+input{
+    padding: 12px;
+    border: 1px solid #0b0b0b;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+}
+
+
+
+.password-div{
+    position: relative;
+}
+
+.text-box{
+    width: 300px;
+    height: 15px;
+    padding:8px 16px;
+}
+
+
+
+.checkbox a{
+    margin-left: 120px;
+
+}
+
+.login-btn{
+    background: #0b0b0b;
+    color: white;
+    padding: 12px;
+    width: 350px;
+    border: none;
+    border-radius: 6px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #777; /* optional */
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.75em;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  margin: 20px 0;
+  font-size: 0.6em;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 0.75em;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 0.75em;
+}
+
+
+.google-link, .fb-link {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    
+    margin-top: 20px;
+    font-size: 0.65em;
+
+} 
+.google-link{
+    background: white;
+    border: 1px #CCC;
+    margin-left: 10px;
+
+}
+
+.fb-link{
+    background: white;
+    border: 1px #CCC;
+    margin-left: 10px;
+
+}
+.register-link{
+    position: relative;
+    margin-top: 30px;
+    font-size: 0.85em;
+    margin-left: 50px;
+    bottom: -30px;
+
+}
+
+.google-logo{
+    width: 4%;
+    position: relative;
+    top: 5px;
+}
+
+.fb-logo{
+    width: 3%;
+    position: relative;
+    top: 3px;
+}
+
